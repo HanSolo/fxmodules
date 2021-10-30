@@ -68,7 +68,7 @@ echo "detected modules: ${detected_modules}"
 # See: https://bugs.openjdk.java.net/browse/JDK-8221674
 #
 # In addition we need jdk.localedata if the application is localized.
-# This can be reduced to the actually needed locales via a jlink paramter,
+# This can be reduced to the actually needed locales via a jlink parameter,
 # e.g., --include-locales=en,de.
 
 manual_modules=jdk.crypto.ec,jdk.localedata
@@ -81,6 +81,7 @@ echo "manual modules: ${manual_modules}"
 # works with dependencies that are not fully modularized, yet.
 
 echo "creating java runtime image"
+# x86 version
 $JAVA_HOME/bin/jlink \
   --no-header-files \
   --no-man-pages  \

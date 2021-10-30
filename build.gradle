@@ -42,6 +42,7 @@ ext {
     buildDate       = new SimpleDateFormat('yyyy-MM-dd').format(buildTimeAndDate)
     buildTime       = new SimpleDateFormat('HH:mm:ss.SSSZ').format(buildTimeAndDate)
     platform        = osdetector.os == 'osx' ? 'mac' : osdetector.os == 'windows' ? 'win' : osdetector.os
+    applesilicon    = platform == 'mac' ? osdetector.arch == 'aarch_64' ? true : false : false
     ciOssrhUsername = System.getenv('OSSRH_USERNAME')
     ciOssrhPassword = System.getenv('OSSRH_PASSWORD')
     ciGHUser        = System.getenv('GH_USER')
