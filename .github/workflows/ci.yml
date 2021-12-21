@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 17
-        uses: actions/setup-java@v1
+        uses: foojayio/setup-java@disco
         with:
           java-version: 17.0.1
           architecture: x64
@@ -32,7 +32,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 17
-        uses: actions/setup-java@v1
+        uses: foojayio/setup-java@disco
         with:
           java-version: 17.0.1
           architecture: x64
@@ -58,7 +58,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 17
-        uses: actions/setup-java@v1
+        uses: foojayio/setup-java@disco
         with:
           java-version: 17.0.1
           architecture: x64
