@@ -89,7 +89,7 @@ jar {
                 'Bundle-Description'    : description,
                 'Bundle-SymbolicName'   : 'eu.hansolo.fx.fxmodules',
                 'Class-Path'            : '${project.name}-${project.version}.jar',
-                'Main-Class'            : 'eu.hansolo.fx.fxmdodules.Launcher'
+                'Main-Class'            : 'eu.hansolo.fx.fxmodules.Launcher'
         )
     }
 }
