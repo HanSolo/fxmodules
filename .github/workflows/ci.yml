@@ -24,7 +24,6 @@ jobs:
           path: '.\build\installer\fxmodules-17.0.0.msi'
 
 
-
   build-mac:
 
     runs-on: [ macos-latest ]
@@ -50,6 +49,7 @@ jobs:
           path: |
             ./build/installer/FXModules-17.0.0.pkg
             ./build/libs/fxmodules-17.0.0.jar
+
 
   build-linux:
 
