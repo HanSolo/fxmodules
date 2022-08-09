@@ -12,7 +12,7 @@ jobs:
       - name: Set up JDK 17
         uses: foojayio/setup-java@disco
         with:
-          java-version: 17.0.1
+          java-version: 17.0.3
           architecture: x64
       - name: Build with Gradle
         run: .\gradlew.bat assemble
@@ -33,7 +33,7 @@ jobs:
       - name: Set up JDK 17
         uses: foojayio/setup-java@disco
         with:
-          java-version: 17.0.1
+          java-version: 17.0.3
           architecture: x64
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
@@ -60,7 +60,7 @@ jobs:
       - name: Set up JDK 17
         uses: foojayio/setup-java@disco
         with:
-          java-version: 17.0.1
+          java-version: 17.0.3
           architecture: x64
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew

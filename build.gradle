@@ -9,8 +9,8 @@ buildscript {
     }
     dependencies {
         classpath 'com.google.gradle:osdetector-gradle-plugin:1.7.0'
-        classpath 'org.javamodularity:moduleplugin:1.8.8'
-        classpath 'org.beryx:badass-jlink-plugin:2.24.4'
+        classpath 'org.javamodularity:moduleplugin:1.8.12'
+        classpath 'org.beryx:badass-jlink-plugin:2.25.0'
     }
 }
 
@@ -18,10 +18,9 @@ plugins {
     id 'java-library'
     id 'application'
     id 'com.google.osdetector'           version '1.7.0'
-    id 'org.javamodularity.moduleplugin' version '1.8.8'
-    id 'org.beryx.jlink'                 version '2.24.4'
-    id 'net.nemerosa.versioning'         version '2.14.0'
-    id 'biz.aQute.bnd.builder'           version '5.3.0'
+    id 'org.javamodularity.moduleplugin' version '1.8.12'
+    id 'org.beryx.jlink'                 version '2.25.0'
+    id 'net.nemerosa.versioning'         version '3.0.0'
 }
 
 normalization {
@@ -101,6 +100,7 @@ jlink {
     }
 }
 
+/* Only needed for preview JDK's
 tasks.withType(JavaCompile) {
     options.compilerArgs += "--enable-preview"
 }
@@ -110,6 +110,7 @@ tasks.withType(Test) {
 tasks.withType(JavaExec) {
     jvmArgs += "--enable-preview"
 }
+*/
 
 // start the from gradle
 task Main(type: JavaExec) {
